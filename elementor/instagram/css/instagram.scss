@@ -1,0 +1,74 @@
+.oew-elementor-instagram {
+    overflow: hidden;
+    position: relative;
+
+    .oew-elementor-inner {
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media (min-width: 375px) and (max-width: 767px) {
+            padding-left: 42px;
+            padding-right: 42px;
+        }
+        @media (min-width: 768px) {
+            max-width: 750px;
+        }
+        @media (min-width: 1250px) {
+            max-width: 1200px;
+        }
+        @media (min-width: 1400px) {
+            max-width: 1370px;
+        }
+        @media (min-width: 1650px) {
+            max-width: 1620px;
+        }
+        @media (min-width: 1810px) {
+            max-width: 1650px;
+        }
+    }
+
+    .oew-section-title {
+        margin-bottom: 38px;
+        text-align: center;
+        @media (min-width: 768px) {
+            margin-bottom: 70px;
+        }
+
+        > * {
+            line-height: 1.8;
+        }
+    }
+
+    .instagram-items {
+        margin-left: -15px;
+        margin-right: -15px;
+        .slick-slider {
+            position: initial;
+        }
+    }
+
+    .insta-item {
+        padding: 0 15px;
+        position: relative;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.oew-elementor-card-list-item {
+    overflow: hidden;
+
+    .oew-elementor-inner {
+        max-width: 1120px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .oew-slick {
+        .slick-track {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .oew-arrow-controls {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .slick-arrow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            background-size: 100% 100%;
+            background-color: transparent;
+            cursor: pointer;
+            position: unset;
+            top: 0;
+            transform: none;
+
+            &:before {
+                content: none;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                transition: all .35s ease-in-out;
+            }
+        }
+    }
+
+    .oew-card-list {
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .card-item {
+            padding: 15px;
+        }
+
+        .card-inner {
+            display: block;
+            padding: 45px 20px 16px;
+            border-radius: 0.875rem;
+            background-color: #fff;
+            box-shadow: 3px 3px 14px 0 rgba(0, 0, 0, 0.06);
+            background-position: 139px -85px;
+            background-size: 243px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .card-title {
+            width: 65%;
+            padding-bottom: 30px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card-info-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            svg {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            li {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+        }
+
+        .tags {
+            .tags-title {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .tags-content {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 6px;
+                    margin-bottom: 6px;
+                    padding: 3px 12px;
+                    border-radius: 20px;
+                    background-color: #f1f1f1;
+                    font-size: 12px;
+                    line-height: 1.5;
+                }
+
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .oew-default-btn {
+            display: block;
+            margin-top: 20px;
+            padding-bottom: 30px;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                color: #000;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: normal;
+                transition: all .4s ease;
+            }
+
+            .icon.right {
+                order: 2;
+                margin-left: 5px;
+                line-height: 1;
+
+                svg {
+                    fill: currentColor;
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}

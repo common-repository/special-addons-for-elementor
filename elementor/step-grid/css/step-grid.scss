@@ -1,0 +1,250 @@
+.oew-elementor-step-grid {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #f4f4f2;
+    @media (min-width: 992px) {
+        padding-bottom: 120px;
+    }
+
+    .oew-elementor-inner {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 85px 15px 25px;
+        border-radius: 10px;
+        background-color: #fff;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 2px 25px -2px rgba(0, 0, 0, .09);
+
+        @media (min-width: 768px) {
+            max-width: 1460px;
+            padding-top: 85px;
+            padding-bottom: 85px;
+        }
+        @media (min-width: 992px) {
+            padding-bottom: 55px;
+        }
+        @media (min-width: 1400px) {
+            width: 100%;
+            padding-bottom: 70px;
+        }
+        @media (min-width: 1600px) {
+            padding-bottom: 85px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            height: 70px;
+            width: 98%;
+            -webkit-transform: translateX(1%);
+            transform: translateX(1%);
+            position: absolute;
+            left: 0;
+            bottom: -70px;
+            background-image: url('../images/wave-border-white.png');
+            background-repeat: repeat-x;
+            background-size: 20% auto;
+            background-position: left top;
+            @media (min-width: 768px) {
+                background-size: 10% auto;
+            }
+            @media (min-width: 1200px) {
+                background-size: 8.32% auto;
+            }
+        }
+    }
+
+    .oew-section-title {
+        display: block;
+        max-width: 855px;
+        margin: 0 auto 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        .oew-heading-title {
+            width: 100%;
+
+            & + .oew-description {
+                margin-top: 16px;
+                @media (min-width: 768px) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .oew-description {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 1.7;
+            @media (min-width: 768px) {
+                font-size: 22px;
+                line-height: 1.4;
+            }
+            @media (min-width: 1600px) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .columns {
+        padding: 0 15px;
+        @media (min-width: 992px) {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            @media (min-width: 768px) {
+                margin-left: -50px;
+                margin-right: -50px;
+            }
+        }
+
+        .column {
+            -webkit-box-flex: 0;
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 50px;
+
+            &:nth-child(-n + 3) {
+                .column-inner {
+                    border-top: none;
+                }
+            }
+
+            @media (min-width: 768px) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding-right: 50px;
+                padding-left: 50px;
+                margin-bottom: 90px;
+            }
+            @media (min-width: 992px) {
+                flex: 0 0 33.3333333333%;
+                max-width: 33.3333333333%;
+                margin-bottom: 55px;
+            }
+            @media (min-width: 1400px) {
+                margin-bottom: 70px;
+            }
+            @media (min-width: 1600px) {
+                margin-bottom: 90px;
+            }
+        }
+    }
+
+    .column-inner {
+        padding-top: 50px;
+        border-top: 2px solid #f2f2f1;
+        text-align: center;
+        font-size: 0;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+        @media (min-width: 992px) {
+            padding-top: 30px;
+        }
+        @media (min-width: 1400px) {
+            padding-top: 40px;
+        }
+        @media (min-width: 1600px) {
+            padding-top: 50px;
+        }
+
+        .icon {
+            max-width: none;
+            margin-bottom: 15px;
+            font-size: 32px;
+            line-height: 1;
+
+            &-image {
+                width: 90px;
+                height: 80px;
+            }
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+                @media (min-width: 768px) {
+                    object-position: left center;
+                }
+            }
+        }
+
+        .column-content {
+            font-size: 13px;
+        }
+
+        .oew-title {
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            margin-bottom: 18px;
+            @media (min-width: 768px) {
+                margin-top: 39px;
+            }
+            @media (min-width: 992px) {
+                font-size: 11px;
+                margin-top: 28px;
+            }
+            @media (min-width: 1400px) {
+                font-size: 13px;
+            }
+            @media (min-width: 1600px) {
+                font-size: 14px;
+                margin-top: 41px;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            h1, h2, h3, h4 {
+                line-height: 1.7;
+                margin-top: 0;
+                font-size: 15px;
+                margin-bottom: 15px;
+                @media (min-width: 768px) {
+                    margin-bottom: 20px;
+                    min-height: 62px;
+                    font-size: 18px;
+                }
+                @media (min-width: 992px) {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+                @media (min-width: 1400px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 1600px) {
+                    font-size: 18px;
+                    margin-bottom: 19px;
+                }
+            }
+
+            p {
+                line-height: 1.9;
+            }
+        }
+    }
+}

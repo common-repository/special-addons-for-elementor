@@ -1,0 +1,101 @@
+.oew-widget-history {
+    .item-histories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-history {
+        text-align: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+        padding-bottom: 60px;
+        position: relative;
+
+        @media (min-width: 576px) {
+            max-width: 33.33333%;
+            flex: 0 0 33.33333%;
+            &::after {
+                content: '';
+                background: #000;
+                height: 2px;
+                width: calc(100% - 60px);
+                position: absolute;
+                bottom: 15px;
+                left: calc(50% + 30px);
+            }
+
+            &:nth-child(3n):after,
+            &:last-child::after {
+                content: none;
+            }
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .item-desc {
+            font-size: 15px;
+            padding: 0 40px;
+            margin-top: 10px;
+        }
+
+        .item-count {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #000;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: calc(50% - 15px);
+            bottom: 0px;
+        }
+    }
+
+    .item-last {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .horizontal-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .included-sign {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .included-number {
+        margin-right: 1px;
+        margin-left: 1px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .included-per-month {
+        margin-top: 8px;
+        margin-left: 4px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .included-price-2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+}

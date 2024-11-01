@@ -1,0 +1,203 @@
+.oew-elementor-widget-banner-advanced {
+    .oew-col-lg-9 {
+        @media (min-width: 768px) {
+            .column {
+                max-width: 58.33333333%;
+                flex: 58.33333333%;
+
+                &:first-child, &:last-child {
+                    max-width: 41.66666667%;
+                    flex: 41.66666667%;
+                }
+            }
+        }
+    }
+
+    .column {
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        &.content-position-left .item-content {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &.content-position-center .item-content {
+            align-items: center;
+            text-align: center;
+        }
+
+        &.content-position-right .item-content {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+
+    .item-inner {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        position: relative;
+    }
+
+    .item-image {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @media (min-width: 576px) {
+            position: relative;
+        }
+
+        img {
+            @media (max-width: 675px) {
+                width: auto;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .item-content {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 30px;
+        position: relative;
+        z-index: 2;
+        @media (min-width: 576px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .oew-title {
+            margin-top: 0;
+            margin-bottom: 3px;
+            font-size: 16px;
+            line-height: 1.25;
+            @media (min-width: 576px) {
+                font-size: 20px;
+                line-height: 1.3;
+            }
+            @media (min-width: 768px) {
+                font-size: 18px;
+                line-height: 1.3333333333333;
+            }
+            @media (min-width: 1200px) {
+                font-size: 22px;
+                line-height: 1.3;
+            }
+        }
+
+        .content {
+            font-size: 13px;
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1200px) {
+                font-size: 14px;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .oew-default-btn {
+            margin-top: 8px;
+            @media (min-width: 576px) and (max-width: 767px) {
+                margin-top: 12px;
+            }
+            @media (min-width: 1200px) {
+                margin-top: 12px;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 15px 6px;
+                background-color: #6c8672;
+                font-size: 12px;
+                font-weight: bold;
+                color: #ffffff;
+                transition: all .4s ease;
+
+                &:hover {
+                    background-color: #68a8ad;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .oew-price-wrapper {
+            margin-top: 8px;
+            @media (min-width: 576px) and (max-width: 767px) {
+                margin-top: 15px;
+            }
+            @media (min-width: 1200px) {
+                margin-top: 15px;
+            }
+
+            .oew-price-amount {
+                display: inline-block;
+                line-height: 1;
+                font-weight: bold;
+                color: #acacac;
+                font-size: 14px;
+                position: relative;
+                @media (min-width: 576px) {
+                    font-size: 24px;
+                }
+                @media (min-width: 768px) and (max-width: 1199px) {
+                    font-size: 18px;
+                }
+
+                &:not(.sale-price):before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    margin-top: 1px;
+                    background: #000;
+                    -webkit-transform: rotate(-12deg);
+                    transform: rotate(-12deg);
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    left: 0;
+                }
+
+                &.sale-price {
+                    font-size: 18px;
+                    color: #f17d80;
+                    @media (min-width: 576px) {
+                        font-size: 32px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        font-size: 22px;
+                    }
+                }
+
+                & + .oew-price-amount {
+                    margin-left: 6px;
+                    @media (min-width: 576px) {
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
